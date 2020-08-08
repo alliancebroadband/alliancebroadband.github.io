@@ -96,76 +96,18 @@
 
 <h1 id="connection-checker-and-auto-login">Connection Checker and Auto Login</h1>
 <hr />
-<p>I wrote a simple script which basically enables you to automatically login if your local gateway is online.
-It's recommended only for those who have an unlimited package.</p>
+<p>LCOs often drop their connection incase of heavy rain and lightning.
+So I need to wait for the LAN connection to come back before I can connect to the internet.
+<!--Also, I have a few services which need internet 24/7.-->
+Thus, what happens is that I frequently need to check if the LAN connection is back or not, which is tiresome.</p>
+<p>Hence, I wrote a simple script which enables you to automatically login the moment your local gateway is online.</p>
 <p>It should be executed on a router or any device which can run 24/7.
 You can also execute it on your laptop or PC but make sure to run it in the background or as a service.</p>
-<p>I've also published it on <a href="https://gist.github.com/thexavier666/490799f6dd406ac5a0d2da3c3e4ac4e5">Gist</a></p>
+<p>I've published it on <a href="https://gist.github.com/thexavier666/490799f6dd406ac5a0d2da3c3e4ac4e5">Gist</a></p>
 <h4 id="note">Note:</h4>
-<p>It's works on Linux only.</p>
-<pre><code>#!/bin/sh
-
-#-- CONFIGURATION AREA ----------------------------
-# Please fill the following before 
-# running this script. Otherwise, you can't login
-#
-#   1. GATEWAY_IP
-#   2. USER (Your Alliance login username)
-#   3. PASSWD (Your Alliance login password)
-#
-# Note: Don't share this file with ANYONE
-# once you have filled your username and password
-
-GATEWAY_IP=&quot;&quot;
-USER=&quot;&quot;
-PASSWD=&quot;&quot;
-
-NET_CHK_IP=&quot;google.co.in&quot;
-SHORT_SLEEP=5
-LONG_SLEEP=5
-PING_WAIT_DUR=3
-PING_NUM_MSG=2
-LOGIN_URL=&quot;http://$GATEWAY_IP/0/up/&quot;
-
-#--------------------------------------------------
-
-while [ true ]
-do
-        while [ true ]
-        do
-                # checking if local gateway is reachable
-                con_status=$(ping -c $PING_NUM_MSG -W $PING_WAIT_DUR $GATEWAY_IP)
-
-                # if not reachable, keep on checking
-                if [ $? -eq 1 ]
-                then
-                        con_time=$(date +%T)
-                        echo &quot;[ERROR] : No ISP connection at $con_time&quot;
-
-                        sleep $SHORT_SLEEP
-                else
-                        echo &quot;[INFO]  : Yes ISP connection&quot;
-                        break
-                fi
-        done
-
-        # checking if Internet is reachable
-        con_status=$(ping -c $PING_NUM_MSG -W $PING_WAIT_DUR $NET_CHK_IP)
-
-        # if not reachable, logging to ISP
-        if [ $? -eq 1 ]
-        then
-                echo &quot;[ERROR] : Not Logged in&quot;
-                curl -ksS -X POST -d &quot;login=LOGIN&amp;user=&quot;${USER}&quot;&amp;pass=&quot;${PASSWD}&quot;&quot; &quot;${LOGIN_URL}&quot; &gt; /dev/null 2&gt;&amp;1
-
-                con_time=$(date +%T)
-                echo &quot;[INFO]  : Logged in at $con_time&quot;
-        else
-                echo &quot;[INFO]  : Yes Internet connected&quot;
-                sleep $LONG_SLEEP
-        fi
-done
-</code></pre></div>
+<p>It's works on Linux only.
+But it can be converted to a Powershell script or it can be run via <a href="https://docs.microsoft.com/en-us/windows/wsl/about">WSL</a>.</p>
+<script src="https://gist.github.com/thexavier666/490799f6dd406ac5a0d2da3c3e4ac4e5.js"></script></div>
             </div>
         </div>
 
