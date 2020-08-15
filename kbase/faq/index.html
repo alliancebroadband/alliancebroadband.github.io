@@ -98,10 +98,6 @@
             
             <li class="nav-item" data-level="1"><a href="#frequently-asked-questions" class="nav-link">Frequently Asked Questions</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#should-i-upgrade-to-a-fibre-connection" class="nav-link">Should I upgrade to a fibre connection?</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
             <li class="nav-item" data-level="2"><a href="#how-do-i-pay-online" class="nav-link">How do I pay online?</a>
               <ul class="nav flex-column">
               </ul>
@@ -119,10 +115,6 @@
               </ul>
             </li>
             <li class="nav-item" data-level="2"><a href="#what-is-the-cost-of-a-new-connection" class="nav-link">What is the cost of a new connection?</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#i-want-to-buy-a-router-which-router-should-i-buy-which-is-the-best-router" class="nav-link">I want to buy a router. Which router should I buy? Which is the best router?</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -150,69 +142,6 @@
                     <div class="col-md-9" role="main">
 
 <h1 id="frequently-asked-questions">Frequently Asked Questions</h1>
-<hr />
-<h2 id="should-i-upgrade-to-a-fibre-connection">Should I upgrade to a fibre connection?</h2>
-<hr />
-<p>Many customers want to shift to an optical fibre connection.
-It certainly is the most reliable form of transportation of signals.</p>
-<p>Broadly speaking, an <strong>optical fibre</strong> based connection has several advantages over a standard <strong>copper ethernet</strong> connection, such as</p>
-<ol>
-<li>Support for much <strong><a href="https://www.multicominc.com/training/technical-resources/copper-vs-fiber-which-to-choose/">higher bandwidth rates</a></strong></li>
-<li>Lesser <strong>packet drop probability rate</strong> due to <a href="https://www.tinygreenpc.com/blog/optical-fibre-immune-to-electromagnetic-interference/">immunity from EM interference</a></li>
-<li>Virtually <strong>impossible to be <a href="https://en.wikipedia.org/wiki/Fiber_tapping">tapped physically</a></strong> (unless you have some very specialized hardware)</li>
-<li><strong>Signal propagation</strong> in optical fibre is <a href="https://physics.stackexchange.com/questions/358894/speed-of-light-vs-speed-of-electricity">faster</a> compared to copper wires (<em>Optical signal</em> verses <em>electrical signal</em>)</li>
-</ol>
-<p>However, considering the scenario in India, let us re-examine the above points</p>
-<ol>
-<li><a href="https://www.speedtest.net/global-index/india">Less than 0.1%</a> of users in India use a 1G internet, which is well within the limits of CAT 5e cables.</li>
-<li>Packet drop in Cat 5e cables due to interference is a very rare event.
-You are more likely to face packet drop due to <strong>link congestion</strong>, <strong>faulty hardware</strong>, <strong>faulty switch configuration</strong> or other <strong>human errors</strong>.
-If these underlying causes are not resolved, <em>even optical fibre will not solve the issue</em>.</li>
-<li>As long as you are using <a href="https://en.wikipedia.org/wiki/HTTPS">HTTPS</a>, wire tapping is not an issue.
-Also, unless the entire infrastucture is not using optical fibre, then the weakest link still remains open for an attacker.</li>
-<li>Difference in signal propagation is imperceptible for most users.
-But depending on your hardware and the LCO's hardware, you can <em>slightly</em> reduce your latency.
-This can be beneficial to people who use <strong>latency-sensitive applications</strong>, such as online gaming.</li>
-</ol>
-<p><img src="../../images/optical_fibre_coil.jpg" alt="An Optical Fibre Storage Enclosure" style="margin-left:auto;margin-right:auto;display:block;height:384px;width:384px;">
-<p style="text-align:center;"><b>An Optical Fibre Storage Enclosure - Needs a lot of space to avoid bends</b></p></p>
-<p>There are some other negatives of optical fibre as well, such as</p>
-<ol>
-<li>It has a high initial setup cost</li>
-<li>It <strong>cannot bend</strong> like copper cables, as the medium is not as malleable as copper.
-You need a proper storage area for the excess cable.</li>
-<li>You need a seperate power point for the <strong>Optical Network Terminal</strong> (ONU).
-In our case, an ONU <strong>converts an optical signal to an electrical signal</strong> which can be understood by a ethernet router.</li>
-</ol>
-<p><img src="../../images/onu_device.jpg" alt="TP1001-GE -1 GE ONU" style="margin-left:auto;margin-right:auto;display:block;height:180px;width:320px;"></p>
-<p style="text-align:center;"><b>TP1001-GE -1 GE ONU</b></p>
-
-<p>However, there are some practical advantages as well</p>
-<ol>
-<li>Lower chance of <strong>connection disruption</strong> during lightning, since optical fibre does not conduct electricity.
-But the middleboxes are still suseptible to failure due to lightning.</li>
-<li>Low <strong><a href="https://www.analogictips.com/what-is-signal-attenuation/">signal attenuation</a></strong> compared to copper cables (Copper cables are rated for a maximum of 100m).
-Hence, longer cables can be used, which implies <strong>lower number of point of failures</strong>.</li>
-<li>Once set, there is much <strong>lower maintenance</strong> because of overall robustness.</li>
-</ol>
-<p>So, switching to fibre has the following <em>REAL</em> benefits to a customer</p>
-<ul>
-<li>Fewer connection disruption in case of inclement weather</li>
-<li>A more reliable connection, since it requires lesser maintenance</li>
-<li>Slightly better latency</li>
-<li>Completely future proof</li>
-</ul>
-<p>If your LCO still does not provide optical fibre, you can instead shift to a <strong>Cat 5e cable</strong>.
-But it only makes sense if your internet package is rated <strong>above 100 Mbps</strong>.
-This is because it's easier and faster for your LCO to upgrade to <strong>Cat 5e</strong> than <strong>optical fibre</strong>.</p>
-<p><img src="../../images/cat6.jpg" alt="Cat 5e - Good enough!" style="margin-left:auto;margin-right:auto;display:block;height:320px;width:320px;"></p>
-<p style="text-align:center;"><b>Cat 5e - Good Enough!</b></p>
-
-<h4 id="conclusion">Conclusion</h4>
-<p>I'm not advocating against optical fibre. 
-If your LCO is offering you the chance to upgrade, then go for it.
-However, understand that an optical connection will not <em>magically</em> solve all your existing problems because they are mostly man-made, barring few nataral phenomenon.</p>
-<p>Both ISPs and LCOs need to upgrade their backbone connection with better hardware for their to be any tangible benefit for us.</p>
 <hr />
 <h2 id="how-do-i-pay-online">How do I pay online?</h2>
 <hr />
@@ -255,8 +184,6 @@ Some LCOs also set the default gateway as DNS server.</p>
 <h2 id="what-is-the-cost-involved-in-upgrading-to-a-fibre-connection">What is the cost involved in upgrading to a fibre connection?</h2>
 <hr />
 <h2 id="what-is-the-cost-of-a-new-connection">What is the cost of a new connection?</h2>
-<hr />
-<h2 id="i-want-to-buy-a-router-which-router-should-i-buy-which-is-the-best-router">I want to buy a router. Which router should I buy? Which is the best router?</h2>
 <hr />
 <h2 id="i-bought-a-new-router-how-do-i-setup-it-up">I bought a new router. How do I setup it up?</h2>
 <hr />
