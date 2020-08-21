@@ -111,7 +111,7 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#what-are-local-cable-operators-lco" class="nav-link">What are Local Cable Operators (LCO)?</a>
+            <li class="nav-item" data-level="2"><a href="#local-cable-operators-lco" class="nav-link">Local Cable Operators (LCO)</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -123,11 +123,19 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#the-stalemate-between-lcos-and-isps" class="nav-link">The Stalemate between LCOs and ISPs?</a>
+            <li class="nav-item" data-level="2"><a href="#the-stalemate-between-lcos-and-isps" class="nav-link">The Stalemate between LCOs and ISPs</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#why-do-people-even-use-tier-3-isps" class="nav-link">Why do people even use Tier-3 ISPs?</a>
               <ul class="nav flex-column">
               </ul>
             </li>
             <li class="nav-item" data-level="2"><a href="#what-can-i-as-a-customer-do-break-this-stalemate" class="nav-link">What can I as a customer do break this stalemate?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#conclusion" class="nav-link">Conclusion</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -140,47 +148,124 @@
 
 <h1 id="what-is-the-relation-between-an-lco-and-an-isp">What is the relation between an LCO and an ISP?</h1>
 <hr />
-<!--
-
-**Note:**
-
-This will be a long post, so keep patience.
-
--->
-
 <h2 id="crash-course-in-internet-architecture">Crash course in Internet Architecture</h2>
 <hr />
-<p>Before I can explain the titular question, we have to have a basic understanding of the structure of the Internet.
-I'll explain it by comparing it to the road system, which is very similar to how the Internet works.</p>
-<p>Just like how we have international, national and state highways, we have Tier 1, Tier 2 and Tier 3 ISPs.</p>
+<p>Before I try to answer the titular question, we need to have a basic understanding of the different types of ISPs.</p>
+<!--
+I'll explain it by comparing it to the road system, which is very similar to how the Internet works.
+-->
+
+<p>There there three types of ISPs; Tier 1, Tier 2 and Tier 3 ISPs.
+They are similar to international, national and state highways.
+Let's see how they work.</p>
 <h3 id="tier-1-isp">Tier 1 ISP</h3>
-<p>These are international origanizations, and must be connected to all other Tier 1 ISPs.
+<p>These are international origanizations, and they must be connected to all other Tier 1 ISPs.
 They provide connections to entire countries.
-Individual customers and businesses don't interact with them.</p>
-<p>Example : </p>
+Normally, individuals and businesses don't interact with them directly.</p>
 <h3 id="tier-2-isp">Tier 2 ISP</h3>
 <p>These ISPs are connected to both Tier 1 ISPs and Tier 2 ISPs.
-These are the gateways to internet for an entire country as they have a country wide presence.
+These are the gateways to internet for an entire country, and they have a country wide presence.
 They buy bandwidth and IP ranges from Tier 1 ISPs and provide them to the users.
 These can be availed by both individual customers and businesses.</p>
-<p>Example : </p>
 <h3 id="tier-3-isp">Tier 3 ISP</h3>
 <p>These ISPs buy bandwidth and IP ranges from Tier 2 ISPs and provide them to the end users.
 They generally have a state or even city-wide presence only.
 Home users and small businesses typically avail their services.</p>
-<p>Example :</p>
+<!-- Image showing heirarchy -->
+
+<p><em>BSNL, Airtel &amp; Reliance are Tier 2 ISPs</em></p>
+<p><em>Alliance, Wishnet and GPTL are Tier 3 ISPs</em></p>
+<p>By looking at the heirarchy of ISPs, you can understand that higher tier ISPs generally have more capital and have greater geographical reach.
+If you buy a connection from a Tier 2 ISP, they have the ability to give you a connection direct from their own distribution center.</p>
+<p>A Tier 3 ISP, on the other hand, can bring a connection near your locality, but not directly to your house.
+This direct connection to an end-user is called <em>"last-mile-connectivity"</em>.
+This last-mile-connectivity is provided by...</p>
 <hr />
-<h2 id="what-are-local-cable-operators-lco">What are Local Cable Operators (LCO)?</h2>
+<h2 id="local-cable-operators-lco">Local Cable Operators (LCO)</h2>
 <hr />
+<p>LCOs set up a network between every residence to his own local hub.
+Then, the LCO needs to buy internet from a Tier 3 ISP.</p>
+<!-- Image showing LCO working -->
+
+<h3 id="how-do-they-operate">How do they operate?</h3>
+<ul>
+<li>They generally have a small team, mostly in the single-digits</li>
+<li>They provide network to a very small locality</li>
+<li>They decide what kind of physical connection you receive (fibre or copper cables)</li>
+<li>Most of the time, they also provide cable TV as well</li>
+<li>In case of physical damage, they are responsible for repairing it since the infrastructure belongs to them</li>
+</ul>
 <h2 id="who-do-lcos-work-for">Who do LCOs work for?</h2>
 <hr />
+<!-- Image showing partnership -->
+
+<p>LCOs don't have a employer; they have partner.
+Alliance Broadband is one of their partners.
+A Tier 3 ISP provides internet to the LCO, and the LCO provides the ISP with a pool of customers.
+The ISP and LCO agree upon a division of profit, something like 70-30; that is, 70% of the profits go to the ISP, and the rest to the LCO.</p>
 <h2 id="why-is-there-difference-in-service-between-different-lcos">Why is there difference in service between different LCOs?</h2>
 <hr />
-<h2 id="the-stalemate-between-lcos-and-isps">The Stalemate between LCOs and ISPs?</h2>
+<p>LCOs are small teams, and they don't have a large budget.
+Some LCOs, who have a large pool of customers, can afford to buy better hardware and provide them to his customers.
+The hardware an LCO maintains consists of </p>
+<ol>
+<li>L2/L3 switches</li>
+<li>Signal boosters/repeaters</li>
+<li>Cable (fibre/copper)</li>
+</ol>
+<p>An LCO cannot afford to buy the best quality of hardware.
+They buy what is decent and resonable.</p>
+<p>On the other hand, some LCOs can be "less efficient/competent".
+Customers under them generally don't have a good experience.
+Hence the difference in service.</p>
+<p>Which is why, customers under Tier 3 ISPs have such a varied experience, since it ultimately boils down to their LCO's ability.</p>
+<!-- Image showing partnership -->
+
+<h2 id="the-stalemate-between-lcos-and-isps">The Stalemate between LCOs and ISPs</h2>
 <hr />
+<p>You might think that if an LCO is underperforming, the ISP will come out of the partnership, but that almost never happens.
+If the ISP walks out, the <em>ISP looses lots of customers</em>.
+The LCO, on the otherhand, will simply <em>switch to other ISP</em>.
+The other ISP will gladly take in the influx of new customers.</p>
+<h2 id="why-do-people-even-use-tier-3-isps">Why do people even use Tier-3 ISPs?</h2>
+<hr />
+<p>There are mainly three reasons</p>
+<ul>
+<li>Tier 3 ISPs offer very cheap internet</li>
+<li>Tier 3 ISPs offer unlimited internet without any Fair Usage Policy (FUP).
+In FUP plans, the ISP will reduce your bandwidth after you have consumed a certain amount of data.
+Most Tier 2 ISPs have very expensive unlimited internet plans and some don't even offer any such plans.</li>
+<li>Tier 3 ISPs rely on a LCO to create the last-mile-connectivity, which otherwise would be expensive for small Tier 3 ISPs, since they have a small number of connection exchanges.</li>
+</ul>
 <h2 id="what-can-i-as-a-customer-do-break-this-stalemate">What can I as a customer do break this stalemate?</h2>
 <hr />
-<hr /></div>
+<p>Connectivity issues are not always the LCOs fault.
+However, most of the time they are the weakest link since they use of the shelf hardware.
+Identifying the exact cause is hard to determine, especially for an customer.</p>
+<p>Complaining to the ISP about your LCO will rarely help.
+Instead, you can try to determine where exactly the problem is occuring.
+Try asking yourself, the following question</p>
+<p>Is the connectivity issue occuring at</p>
+<ol>
+<li>Your router?</li>
+<li>Your local gateway?</li>
+<li>The ISP's egress switch?</li>
+<li>The server you are trying to access?</li>
+</ol>
+<p>The above list is ordered by <strong>more probable</strong> to <strong>less probable</strong>.</p>
+<hr />
+<h2 id="conclusion">Conclusion</h2>
+<hr />
+<p>Here is a controversial opinion; if your livelihood is critically dependant on your internet, have a backup network connection, or subscribe to a Tier 2 ISP.</p>
+<p>A Tier 2 ISP provides the following guarantees</p>
+<ul>
+<li>Stable connection, not dependant on weather.</li>
+<li>Some degree of QoS assurances</li>
+<li>Uniform customer experience</li>
+</ul>
+<p>However, you do pay a premium for the above services.</p>
+<p>Tier 3 ISPs are mainly for residential areas.
+COVID-19 has flipped the scenario but we have to work with what we have got.</p></div>
             </div>
         </div>
 
