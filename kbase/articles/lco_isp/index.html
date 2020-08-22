@@ -123,7 +123,7 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#the-stalemate-between-lcos-and-isps" class="nav-link">The Stalemate between LCOs and ISPs</a>
+            <li class="nav-item" data-level="2"><a href="#the-deadlock-between-lcos-and-isps" class="nav-link">The Deadlock between LCOs and ISPs</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -151,42 +151,38 @@
 <h2 id="crash-course-in-internet-architecture">Crash course in Internet Architecture</h2>
 <hr />
 <p>Before I try to answer the titular question, we need to have a basic understanding of the different types of ISPs.</p>
-<!--
-I'll explain it by comparing it to the road system, which is very similar to how the Internet works.
--->
-
 <p>There are <a href="https://www.thousandeyes.com/learning/techtorials/isp-tiers">three types of ISPs</a>; Tier 1, Tier 2 and Tier 3 ISPs.
 They are similar to international, national and state highways.
 Let's see how they work.</p>
 <h3 id="tier-1-isp">Tier 1 ISP</h3>
-<p>These are international origanizations, and they must be connected to all other Tier 1 ISPs.
+<p>These are international organizations, and they must be connected to all other Tier 1 ISPs.
 They provide connections to entire countries.
 Normally, individuals and businesses don't interact with them directly.</p>
 <h3 id="tier-2-isp">Tier 2 ISP</h3>
 <p>These ISPs are connected to both Tier 1 ISPs and Tier 2 ISPs.
 These are the gateways to internet for an entire country, and they have a country wide presence.
-They buy bandwidth and IP ranges from Tier 1 ISPs and provide them to the users.
-These can be availed by both individual customers and businesses.</p>
+They buy bandwidth and IP ranges from Tier 1 ISPs and provide them to the users and businesses.</p>
 <h3 id="tier-3-isp">Tier 3 ISP</h3>
 <p>These ISPs buy bandwidth and IP ranges from Tier 2 ISPs and provide them to the end users.
 They generally have a state or even city-wide presence only.
 Home users and small businesses typically avail their services.</p>
-<!-- Image showing heirarchy -->
+<!-- Image showing hierarchy-->
 
 <p><img class="c_img" src="../../../images/isp_tier.png" style="height:250px;width:400px">
-<p class="c_caption">ISP Heirarchy</p></p>
+<p class="c_caption">ISP Hierarchy</p></p>
 <p><em>BSNL, Airtel &amp; Reliance are Tier 2 ISPs</em></p>
 <p><em>Alliance, Wishnet and GPTL are Tier 3 ISPs</em></p>
-<p>By looking at the heirarchy of ISPs, you can understand that higher tier ISPs generally have more capital and have greater geographical reach.
+<p>By looking at the hierarchy of ISPs, you can understand that higher tier ISPs generally have more capital and have greater geographical reach.
 If you buy a connection from a Tier 2 ISP, they have the ability to give you a connection direct from their own distribution center.</p>
 <p>A Tier 3 ISP, on the other hand, can bring a connection near your locality, but not directly to your house.
 This direct connection to an end-user is called <em>"last-mile-connectivity"</em>.
-This last-mile-connectivity is provided by...</p>
+This <a href="https://en.wikipedia.org/wiki/Last_mile">last-mile-connectivity</a> is provided by local cable operators.</p>
 <hr />
 <h2 id="local-cable-operators-lco">Local Cable Operators (LCO)</h2>
 <hr />
 <p>LCOs set up a network between every residence to his own local hub.
-Then, the LCO needs to buy internet from a Tier 3 ISP.</p>
+Then, the LCO buy internet from a Tier 3 ISP.</p>
+<p>They buy internet from the ISP which offers them the best division of profits.</p>
 <!-- Image showing LCO working -->
 
 <p><img class="c_img" src="../../../images/lcos_working.jpg" style="height:300px;width:250px">
@@ -199,17 +195,22 @@ Then, the LCO needs to buy internet from a Tier 3 ISP.</p>
 <li>Most of the time, they also provide cable TV as well</li>
 <li>In case of physical damage, they are responsible for repairing it since the infrastructure belongs to them</li>
 </ul>
+<hr />
 <h2 id="who-do-lcos-work-for">Who do LCOs work for?</h2>
 <hr />
 <!-- Image showing partnership -->
 
+<p><img class="c_img" src="../../../images/partnership.png" style="height:300px;width:300px">
+<p class="c_caption">LCOs to ISP: Give me internet and I'll give you customers</p></p>
 <p>LCOs don't have a employer; they have partners.
 Alliance Broadband is one of their partners.</p>
 <p>A Tier 3 ISP provides internet to the LCO, and the LCO provides the ISP with a pool of customers.
 The ISP and LCO agree upon a division of profit, for example 70-30; that is, 70% of the profits go to the ISP, and the rest to the LCO.</p>
+<hr />
 <h2 id="why-is-there-difference-in-service-between-different-lcos">Why is there difference in service between different LCOs?</h2>
 <hr />
-<p>LCOs are small teams, and they don't have a large budget.
+<p>LCOs do unionize (as far as I know), they are self employed.
+They are small teams, and they don't have a large budget.
 Some LCOs, who have a large pool of customers, can afford to buy better hardware and provide them to his customers.</p>
 <p>The hardware an LCO maintains consists of </p>
 <ol>
@@ -217,35 +218,40 @@ Some LCOs, who have a large pool of customers, can afford to buy better hardware
 <li>Signal boosters/repeaters</li>
 <li>Cable (fibre/copper)</li>
 </ol>
-<p>An LCO cannot afford to buy the best quality of hardware.
-They buy what is decent and resonable.</p>
+<p>Some LCOs cannot afford to buy the best quality of hardware.
+They buy what is decent and reasonable.</p>
 <p>On the other hand, some LCOs can be "less efficient/competent".
 Customers under them generally don't have a good experience.
 Hence the difference in service.</p>
-<p>Which is why, customers under Tier 3 ISPs have such a varied experience, since it ultimately boils down to their LCO's ability.</p>
+<p>Which is why, customers under Tier 3 ISPs have such a varied experience, since it ultimately depends on their respective LCO's ability.</p>
 <!-- Image showing partnership -->
 
 <p><img class="c_img" src="../../../images/angry_user.png" style="height:200px;width:300px">
 <p class="c_caption">Watching the RTOs increasing</p></p>
-<h2 id="the-stalemate-between-lcos-and-isps">The Stalemate between LCOs and ISPs</h2>
 <hr />
+<h2 id="the-deadlock-between-lcos-and-isps">The Deadlock between LCOs and ISPs</h2>
+<hr />
+<p><img class="c_img" src="../../../images/deadlock.jpg" style="height:200px;width:300px">
+<p class="c_caption">Deadlock</p></p>
 <p>You might think that if an LCO is underperforming, the ISP will come out of the partnership, but that almost never happens.
 If the ISP walks out, the <em>ISP looses lots of customers</em>.</p>
-<p>The LCO, on the otherhand, will simply <em>switch to other ISP</em>.
+<p>The LCO, on the other hand, will simply <em>switch to other ISP</em>.
 The other ISP will gladly take in the influx of new customers.</p>
+<p>Another reason why this hierarchy exists because it's very hard for a Tier 3 ISP to create dedicated links to everyone's house.
+Hence, they offload the cost of connectivity to the LCOs.</p>
+<hr />
 <h2 id="why-do-people-even-use-tier-3-isps">Why do people even use Tier-3 ISPs?</h2>
 <hr />
-<p>There are mainly three reasons</p>
 <ul>
 <li>Tier 3 ISPs offer very cheap internet</li>
 <li>Tier 3 ISPs offer unlimited internet plans without any Fair Usage Policy (FUP).
 In FUP plans, the ISP will reduce your bandwidth after you have consumed a certain amount of data.
 Most Tier 2 ISPs have very expensive unlimited internet plans and some don't even offer any such plans.</li>
-<li>Tier 3 ISPs rely on a LCO to create the last-mile-connectivity, which otherwise would be expensive for small Tier 3 ISPs, since they have a small number of connection exchanges.</li>
 </ul>
+<hr />
 <h2 id="what-can-i-as-a-customer-do-break-this-stalemate">What can I, as a customer, do break this stalemate?</h2>
 <hr />
-<p>Nothing.</p>
+<p><em><strong>Nothing.</strong></em></p>
 <p>This model exists because we Indians like cheap things.
 Connectivity issues will continue to exist as long as</p>
 <ul>
@@ -279,23 +285,26 @@ Try asking yourself, the following question</p>
 </ol>
 <p>Now you know who to blame</p>
 <ul>
-<li><strong>Point 1 True</strong> - Blame yourself</li>
-<li><strong>Point 2 True</strong> - Blame your LCO </li>
-<li><strong>Point 3 True</strong> - Blame your ISP </li>
-<li><strong>Point 4 True</strong> - Blame the server manager </li>
+<li><strong>Point 1 true</strong> - Blame yourself</li>
+<li><strong>Point 2 true</strong> - Blame your LCO </li>
+<li><strong>Point 3 true</strong> - Blame your ISP </li>
+<li><strong>Point 4 true</strong> - Blame the server owner </li>
 </ul>
 <hr />
 <h2 id="conclusion">Conclusion</h2>
 <hr />
 <p>Here is a controversial opinion; if your livelihood is critically dependant on your internet, have a backup network connection, or subscribe to a Tier 2 ISP.</p>
+<p><img class="c_img" src="../../../images/money_inr.jpeg" style="height:200px;width:300px">
+<p class="c_caption">Tier 2 ISP - I love money</p></p>
 <p>A Tier 2 ISP provides the following guarantees</p>
 <ul>
 <li>Stable connection, not dependant on weather.</li>
 <li>Some degree of QoS assurances</li>
 <li>Uniform customer experience</li>
 </ul>
-<p>However, you pay a premium for the above services.</p>
-<p>Tier 3 ISPs are mainly for residential areas.
+<p>However, you pay a hefty premium for the above services.</p>
+<p>You can also try to switch to a different LCO, but the scenario will be quite similar.
+Tier 3 ISPs are mainly for residential areas, where an average user checks mail, social media and watches movies.
 COVID-19 has flipped the scenario but we have to work with what we have got.</p></div>
             </div>
         </div>
