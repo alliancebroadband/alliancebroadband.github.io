@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>What is the relation between an LCO and an ISP? - Alliance Broadband FAQ</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/color-brewer.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link href="../../../css/extra.css" rel="stylesheet">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">Alliance Broadband FAQ</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Knowledge Base <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../faq/" class="dropdown-item">FAQ</a>
+</li>
+                                    
+<li>
+    <a href="../../article_list/" class="dropdown-item">Articles</a>
+</li>
+                                    
+<li>
+    <a href="../../lco_information/" class="dropdown-item">LCO Information</a>
+</li>
+                                    
+<li>
+    <a href="../../abspl/" class="dropdown-item">About ABSPL</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../about/purpose/" class="dropdown-item">Purpose</a>
+</li>
+                                    
+<li>
+    <a href="../../../about/faq_about_site/" class="dropdown-item">FAQ about Site</a>
+</li>
+                                    
+<li>
+    <a href="../../../about/contact/" class="dropdown-item">Contact/Donate</a>
+</li>
+                                    
+<li>
+    <a href="../../../about/agreement/" class="dropdown-item">Agreement</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#what-is-the-relation-between-an-lco-and-an-isp" class="nav-link">What is the relation between an LCO and an ISP?</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#crash-course-in-internet-architecture" class="nav-link">Crash course in Internet Architecture</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#local-cable-operators-lco" class="nav-link">Local Cable Operators (LCO)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#who-do-lcos-work-for" class="nav-link">Who do LCOs work for?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#why-is-there-difference-in-service-between-different-lcos" class="nav-link">Why is there difference in service between different LCOs?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#the-deadlock-between-lcos-and-isps" class="nav-link">The Deadlock between LCOs and ISPs</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#why-do-people-even-use-tier-3-isps" class="nav-link">Why do people even use Tier-3 ISPs?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#what-can-i-as-a-customer-do-break-this-stalemate" class="nav-link">What can I, as a customer, do break this stalemate?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#conclusion" class="nav-link">Conclusion</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="what-is-the-relation-between-an-lco-and-an-isp">What is the relation between an LCO and an ISP?</h1>
+<hr />
+<h2 id="crash-course-in-internet-architecture">Crash course in Internet Architecture</h2>
+<hr />
+<p>Before I try to answer the titular question, we need to have a basic understanding of the different types of ISPs.</p>
+<p>There are <a href="https://www.thousandeyes.com/learning/techtorials/isp-tiers">three types of ISPs</a>; <strong>Tier 1</strong>, <strong>Tier 2</strong> and <strong>Tier 3</strong> ISPs.
+They are similar to international, national and state highways.
+Let's see how they work.</p>
+<h3 id="tier-1-isp">Tier 1 ISP</h3>
+<p>These are international organizations, and they must be connected to all other Tier 1 ISPs.
+They provide connections to entire countries.
+Normally, individuals and businesses don't interact with them directly.</p>
+<h3 id="tier-2-isp">Tier 2 ISP</h3>
+<p>These ISPs are connected to both Tier 1 ISPs and Tier 2 ISPs.
+These are the gateways to internet for an entire country, and they have a country wide presence.
+They buy bandwidth and IP ranges from Tier 1 ISPs and provide them to the users and businesses.</p>
+<h3 id="tier-3-isp">Tier 3 ISP</h3>
+<p>These ISPs buy bandwidth and IP ranges from Tier 2 ISPs and provide them to the end users.
+They generally have a state or even city-wide presence only.
+Home users and small businesses typically avail their services.</p>
+<!-- Image showing hierarchy-->
+
+<p><img class="c_img" src="../../../images/isp_tier.png" style="height:250px;width:400px">
+<p class="c_caption">ISP Hierarchy</p></p>
+<p><em>BSNL, Airtel &amp; Reliance are Tier 2 ISPs</em></p>
+<p><em>Alliance, Wishnet and GPTL are Tier 3 ISPs</em></p>
+<p>By looking at the hierarchy of ISPs, you can understand that higher tier ISPs generally have more capital and have greater geographical reach.
+If you buy a connection from a Tier 2 ISP, they have the ability to give you a connection direct from their own distribution center.</p>
+<p>A Tier 3 ISP, on the other hand, can bring a connection near your locality, but not directly to your house.
+This direct connection to an end-user is called <em>"last-mile-connectivity"</em>.
+This <a href="https://en.wikipedia.org/wiki/Last_mile">last-mile-connectivity</a> is provided by local cable operators.</p>
+<hr />
+<h2 id="local-cable-operators-lco">Local Cable Operators (LCO)</h2>
+<hr />
+<p>LCOs set up a network between every residence to his own local hub.
+Then, the LCO buy internet from a Tier 3 ISP, generally from the ISP which offers them the best division of profits.</p>
+<!-- Image showing LCO working -->
+
+<p><img class="c_img" src="../../../images/lcos_working.jpg" style="height:300px;width:250px">
+<p class="c_caption">LCOs plugging in your cable. Easy!</p></p>
+<h3 id="how-do-they-operate">How do they operate?</h3>
+<ul>
+<li>They generally have a small team, mostly in the single-digits</li>
+<li>They provide network to a very small locality</li>
+<li>They decide what kind of physical connection you receive (fibre or copper cables)</li>
+<li>Most of the time, they also provide cable TV as well</li>
+<li>In case of physical damage, they are responsible for repairing it since the infrastructure belongs to them</li>
+</ul>
+<hr />
+<h2 id="who-do-lcos-work-for">Who do LCOs work for?</h2>
+<hr />
+<!-- Image showing partnership -->
+
+<p><img class="c_img" src="../../../images/partnership.png" style="height:300px;width:300px">
+<p class="c_caption">LCOs to ISP: Give me internet and I'll give you customers</p></p>
+<p>LCOs don't have a employer; they have partners.
+Alliance Broadband is one of their partners.</p>
+<p>A Tier 3 ISP provides internet to the LCO, and the LCO provides the ISP with a pool of customers.
+The ISP and LCO agree upon a division of profit, for example 70-30; that is, 70% of the profits go to the ISP, and the rest to the LCO.</p>
+<hr />
+<h2 id="why-is-there-difference-in-service-between-different-lcos">Why is there difference in service between different LCOs?</h2>
+<hr />
+<p>LCOs don't unionize (as far as I know), they are self employed.
+They are small teams, and they don't have a large budget.
+Some LCOs, who have a large pool of customers, can afford to buy better hardware and provide them to his customers.</p>
+<p>The hardware an LCO maintains consists of </p>
+<ol>
+<li>L2/L3 switches</li>
+<li>Signal boosters/repeaters</li>
+<li>Cable (fibre/copper)</li>
+</ol>
+<p>Some LCOs cannot afford to buy the best quality of hardware.
+They buy what is decent and reasonable.</p>
+<p>On the other hand, some LCOs can be "less efficient/competent".
+Customers under them generally don't have a good experience.
+Hence the difference in service.</p>
+<p>Which is why, customers under Tier 3 ISPs have such a varied experience, since it ultimately depends on their respective LCO's ability.</p>
+<!-- Image showing partnership -->
+
+<p><img class="c_img" src="../../../images/angry_user.png" style="height:200px;width:300px">
+<p class="c_caption">Watching the RTOs increasing</p></p>
+<hr />
+<h2 id="the-deadlock-between-lcos-and-isps">The Deadlock between LCOs and ISPs</h2>
+<hr />
+<p><img class="c_img" src="../../../images/deadlock.jpg" style="height:200px;width:300px">
+<p class="c_caption">Deadlock</p></p>
+<p>It's not unreasonable to assume that if an LCO is underperforming, the ISP will come out of the partnership, but that almost never happens because</p>
+<ul>
+<li>If the ISP walks out, the <em>ISP looses lots of customers</em>.</li>
+<li>The LCO, on the other hand, will simply <em>switch to other ISP</em>.</li>
+<li>Other competing ISPs will gladly take in the influx of new customers from this LCO</li>
+</ul>
+<p>Another reason why this hierarchy exists because it's very hard for a Tier 3 ISP to <em>create dedicated links to everyone's house</em>.
+Hence, they <em>offload the cost of connectivity</em> to the LCOs.</p>
+<hr />
+<h2 id="why-do-people-even-use-tier-3-isps">Why do people even use Tier-3 ISPs?</h2>
+<hr />
+<p>You might think that this business model has no positives but it has evolved because of a need</p>
+<ul>
+<li>Tier 3 ISPs offer very cheap internet</li>
+<li>Tier 3 ISPs offer unlimited internet plans without any Fair Usage Policy (FUP).
+In FUP plans, the ISP will reduce your bandwidth after you have consumed a certain amount of data.
+Most Tier 2 ISPs have very expensive unlimited internet plans and some don't even offer any such plans.</li>
+<li>Tier 3 ISPs generally have better reach.
+For example, outside of metro cities, you can only find Tier 3 ISPs.</li>
+</ul>
+<hr />
+<h2 id="what-can-i-as-a-customer-do-break-this-stalemate">What can I, as a customer, do break this stalemate?</h2>
+<hr />
+<p><em><strong>Nothing.</strong></em></p>
+<p>This model exists because we Indians like cheap things.
+Connectivity issues will continue to exist as long as</p>
+<ul>
+<li>LCO uses sub-standard hardware</li>
+<li>Tier 3 ISPs overcommit bandwidth
+Overcommitting means that they buy lesser bandwidth compared to the number of customers.
+This because of the assumption that not all customers will use the internet at the same time.
+This is not a situation unique to ISPs; it's a tried and tested technique in <a href="https://docs.openstack.org/arch-design/design-compute/design-compute-overcommit.html">datacenters</a>.
+The problem is more visible now because how COVID-19 forced people to use their residential extensively.</li>
+</ul>
+<p>Connectivity issues are not always the LCOs fault.
+Considering the scenario of 2020, even Tier 2 ISPs, from whom Alliance buys connection, are facing issues because of current unbalanced nature of network utilization.
+However, most of the time, LCOs are the weakest link in the chain, since they use <em>off-the-shelf</em> hardware.
+Identifying the exact cause is hard to determine, especially for an customer.</p>
+<p>Complaining to the ISP about your LCO will rarely help (because of the deadlock scenario mentioned earlier).
+Instead, you can try to determine where exactly the problem is occurring.
+Try asking yourself, the following question.</p>
+<p><em>Is the connectivity issue occurring at</em></p>
+<ul>
+<li><strong>Point 1</strong> - Your router?</li>
+<li><strong>Point 2</strong> - Your local gateway?</li>
+<li><strong>Point 3</strong> - The ISP's egress switch?</li>
+<li><strong>Point 4</strong> - The server you are trying to access?</li>
+</ul>
+<p>The above list is ordered by <strong>more probable</strong> to <strong>less probable</strong>.</p>
+<p>How do you answer the above questions?
+By checking the following scenarios</p>
+<ul>
+<li><strong>Verifying Point 1</strong> - A friend under the same LCO is facing no issues</li>
+<li><strong>Verifying Point 2</strong> - A friend under a different LCO but same ISP is facing no issues</li>
+<li><strong>Verifying Point 3</strong> - A friend under a different ISP is facing no issues</li>
+<li><strong>Verifying Point 4</strong> - Everyone is facing the same issue</li>
+</ul>
+<p>Now you know who to blame</p>
+<ul>
+<li><strong>Point 1 true</strong> - Blame yourself</li>
+<li><strong>Point 2 true</strong> - Blame your LCO </li>
+<li><strong>Point 3 true</strong> - Blame your ISP </li>
+<li><strong>Point 4 true</strong> - Blame the server owner </li>
+</ul>
+<hr />
+<h2 id="conclusion">Conclusion</h2>
+<hr />
+<p>Here is a controversial opinion; </p>
+<p><em><strong>If your livelihood is critically dependant on your internet, have a backup network connection, or subscribe to a Tier 2 ISP</strong></em>.</p>
+<p>A Tier 2 ISP provides the following guarantees</p>
+<ul>
+<li>Stable connection, not dependant on weather.</li>
+<li>Some degree of QoS assurances</li>
+<li>Uniform customer experience</li>
+</ul>
+<p>However, you pay a hefty premium for the above services.</p>
+<p><img class="c_img" src="../../../images/money_inr.jpeg" style="height:200px;width:300px">
+<p class="c_caption">Tier 2 ISP - I love money</p></p>
+<p>You can also try to switch to a different LCO, but the scenario will be quite similar.
+Tier 3 ISPs are mainly for residential areas, where an average user checks mail, social media and watches movies.
+COVID-19 has flipped the scenario but we have to work with what we have got.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Made with ❤ by Xavier. Copyright 2020</p>
+	    <p>Want to Donate? Check <em>About</em> section</p>
+            <!--p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p-->
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
